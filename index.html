@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janet Uwakwe · Executive Operations Specialist</title>
+    <meta name="description"
+        content="Executive Operations Specialist helping founders and businesses streamline operations, simplify workflows, and reduce repetitive tasks." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Janet Uwakwe · Executive Operations Specialist" />
+    <meta property="og:description"
+        content="Executive Operations Specialist helping founders and businesses streamline operations, simplify workflows, and reduce repetitive tasks." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://Nenet1.github.io/portfolio/" />
+    <meta property="og:image" content="https://Nenet1.github.io/portfolio/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Janet Uwakwe - Executive Operations Specialist" />
+    <meta property="og:site_name" content="Janet Uwakwe · Executive Operations Specialist" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Janet Uwakwe · Executive Operations Specialist" />
+    <meta name="twitter:description"
+        content="Executive Operations Specialist helping founders and businesses streamline operations, simplify workflows, and reduce repetitive tasks." />
+    <meta name="twitter:image" content="https://Nenet1.github.io/portfolio/assets/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Janet Uwakwe - Executive Operations Specialist" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Lenis Smooth Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <!-- =============================================
+    NOISE / GRAIN OVERLAY
+    ============================================= -->
+    <div class="noise-overlay"></div>
+
+    <!-- =============================================
+    CUSTOM CURSOR
+    ============================================= -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- =============================================
+    FLOATING BACK TO TOP BUTTON
+    ============================================= -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- =============================================
+    NAVIGATION
+    ============================================= -->
+    <nav class="navbar glass-nav" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Janet<span>.</span></div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#competencies">Competencies</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- =============================================
+    HERO
+    ============================================= -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <!-- Left: Hero Image -->
+                <div class="hero-visual reveal" data-delay="0.1">
+                    <div class="hero-image-frame tilt-horizontal">
+                        <div class="image-wrapper">
+                            <img src="./assets/janet_hero.jpg" alt="Janet Uwakwe - Executive Operations Specialist"
+                                class="hero-image" />
+                            <div class="image-overlay"></div>
+                            <div class="glass-overlay"></div>
+                        </div>
+                        <span class="corner-deco corner-tl">✦</span>
+                        <span class="corner-deco corner-tr">✦</span>
+                        <span class="corner-deco corner-bl">✦</span>
+                        <span class="corner-deco corner-br">✦</span>
+                    </div>
+
+                    <!-- Stats Bar -->
+                    <div class="hero-stats-row glass-card">
+                        <div class="stat">
+                            <strong id="stat1">0</strong>
+                            <span>Meetings Monthly</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="stat">
+                            <strong id="stat2">0</strong>
+                            <span>Response Time</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="stat">
+                            <strong id="stat3">0</strong>
+                            <span>Efficiency Boost</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="hero-content reveal" data-delay="0.2">
+                    <span class="hero-badge">✦ Executive Operations Specialist</span>
+                    <h1>
+                        <span class="typewriter-static">I'm Janet — </span>
+                        <span class="typewriter-text" id="typewriterText"></span>
+                        <span class="cursor-blink">|</span>
+                    </h1>
+                    <p class="hero-desc">I help growing founders and businesses become more organized, work more
+                        intelligently, and spend less time on repetitive tasks by converting complex workflows into
+                        efficient systems.</p>
+                    <div class="hero-actions">
+                        <a href="https://calendly.com/janetuwakwe/clarity-call" target="_blank"
+                            class="btn btn-primary magnetic">
+                            <i class="fas fa-calendar-check"></i> Schedule a Free Audit
+                        </a>
+                        <a href="./assets/janet_resume.docx" download class="btn btn-outline magnetic">
+                            <i class="fas fa-file-pdf"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="hero-tags">
+                        <span>✦ Executive Support</span>
+                        <span class="dot">·</span>
+                        <span>✦ Operations</span>
+                        <span class="dot">·</span>
+                        <span>✦ AI Automation</span>
+                        <span class="dot">·</span>
+                        <span>✦ Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    ABOUT
+    ============================================= -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left: Text Content -->
+                <div class="about-text reveal">
+                    <span class="section-tag">About</span>
+                    <h2 class="section-title">Turning complexity into <span>clarity</span></h2>
+
+                    <p><strong>I serve as an Executive Operations Specialist</strong> to assist founders and businesses
+                        that are expanding with the aim of streamlining their operations, simplifying their workflows,
+                        and cutting down on repetitive tasks.</p>
+
+                    <p>I bring together <strong>executive support</strong> — such as calendar, inbox & travel management
+                        — with <strong>operations management, systems thinking, and AI-powered automation</strong> in
+                        order to come up with practical solutions which help businesses to operate more efficiently.</p>
+
+                    <p>I enjoy taking the idea that <em>"there has to be a better way to do this"</em> and turning it
+                        into an actual system — by organizing operations, drawing up standard operating procedures, and
+                        designing automated workflows using <strong>Notion, Airtable, Make, Zapier, and n8n</strong>.
+                    </p>
+
+                    <p>I am curious, pay close attention to detail, and always seek ways to make work simpler, wiser,
+                        and more intentional.</p>
+
+                    <p><em>Ready to stop stressing and start automating? I'd love to offer you a free systems audit.
+                            Together, we'll identify your biggest bottlenecks and map out a solution that actually
+                            works.</em></p>
+
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary magnetic">
+                            <i class="fas fa-calendar-check"></i> Schedule a call
+                        </a>
+                        <a href="./assets/janet_resume.docx" download class="btn btn-outline magnetic">
+                            <i class="fas fa-file-pdf"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: 3 Cards -->
+                <div class="about-cards">
+                    <div class="about-card glass-card reveal" data-delay="0.1">
+                        <h4><i class="fas fa-user-tie"></i> Executive Support</h4>
+                        <p>Calendar, inbox & travel management, meeting coordination, and confidential stakeholder
+                            communication.</p>
+                    </div>
+                    <div class="about-card glass-card reveal" data-delay="0.2">
+                        <h4><i class="fas fa-robot"></i> AI Automation</h4>
+                        <p>AI-powered workflows using Zapier, Make, n8n, Claude, and Gemini to eliminate repetitive
+                            tasks.</p>
+                    </div>
+                    <div class="about-card glass-card reveal" data-delay="0.3">
+                        <h4><i class="fas fa-project-diagram"></i> Operations & Systems</h4>
+                        <p>SOP development, workflow design, and systems thinking using Notion, Airtable, and
+                            Monday.com.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    CORE COMPETENCIES
+    ============================================= -->
+    <section class="competencies" id="competencies">
+        <div class="container">
+            <div class="competencies-header reveal">
+                <span class="section-tag">Core Competencies</span>
+                <h2 class="section-title">What I <span>bring</span></h2>
+                <p class="section-sub">A comprehensive skill set built across executive support, operations, and AI
+                    automation.</p>
+            </div>
+            <div class="competencies-grid">
+                <div class="comp-card glass-card reveal" data-delay="0.05">
+                    <div class="comp-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Executive Support</h3>
+                    <ul>
+                        <li>Executive Calendar &amp; Inbox Management</li>
+                        <li>Meeting Minutes &amp; Action Tracking</li>
+                        <li>Travel Coordination</li>
+                        <li>Stakeholder Liaison</li>
+                        <li>Report &amp; Presentation Prep</li>
+                        <li>Confidential File Management</li>
+                    </ul>
+                </div>
+                <div class="comp-card glass-card reveal" data-delay="0.1">
+                    <div class="comp-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI &amp; Automation</h3>
+                    <ul>
+                        <li>Zapier • Make.com • n8n</li>
+                        <li>Claude • Gemini</li>
+                        <li>AI-Powered Workflows</li>
+                        <li>Custom Automation Solutions</li>
+                        <li>CRM Systems</li>
+                    </ul>
+                </div>
+                <div class="comp-card glass-card reveal" data-delay="0.15">
+                    <div class="comp-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Operations &amp; Project Tools</h3>
+                    <ul>
+                        <li>Notion • Airtable</li>
+                        <li>Monday.com • Asana</li>
+                        <li>ClickUp • Trello • Jira</li>
+                        <li>Zoho CRM</li>
+                    </ul>
+                </div>
+                <div class="comp-card glass-card reveal" data-delay="0.2">
+                    <div class="comp-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>Office &amp; Communication</h3>
+                    <ul>
+                        <li>Google Workspace • Microsoft Office</li>
+                        <li>Microsoft Excel • QuickBooks</li>
+                        <li>Slack • Zoom</li>
+                        <li>Canva</li>
+                    </ul>
+                </div>
+                <div class="comp-card glass-card reveal" data-delay="0.25">
+                    <div class="comp-icon"><i class="fas fa-star"></i></div>
+                    <h3>Core Attributes</h3>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Problem-Solving</li>
+                        <li>High Attention to Detail</li>
+                        <li>Discretion &amp; Confidentiality</li>
+                        <li>Independent, Cross-Timezone Work</li>
+                        <li>Ownership Mentality</li>
+                        <li>Curious &amp; Intentional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    EXPERIENCE
+    ============================================= -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="experience-header reveal">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Where I've <span>worked</span></h2>
+                <p class="section-sub">Supporting executives and building operations systems across industries.</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="exp-item reveal" data-delay="0.05">
+                    <div class="exp-year">Jul 2024 – Present</div>
+                    <div class="exp-content">
+                        <h3>Executive / Operations Assistant</h3>
+                        <p class="exp-org">Ark Renewable Energy Inc. · Canada (Remote)</p>
+                        <ul class="exp-duties">
+                            <li>Scheduled and adjusted over 50 meetings monthly across multiple time zones, improving
+                                executive availability by 30%</li>
+                            <li>Managed 100+ emails weekly with 95% accuracy, ensuring urgent messages addressed within
+                                2 hours</li>
+                            <li>Organised over 10 local and international trips quarterly, reducing travel delays by 20%
+                            </li>
+                            <li>Created and formatted over 20 weekly reports using Microsoft PowerPoint and Google
+                                Slides</li>
+                            <li>Managed sensitive correspondence with discretion, maintaining 100% confidentiality</li>
+                            <li>Organised and facilitated 10+ team meetings monthly, boosting collaboration by 20%</li>
+                            <li>Developed digital filing systems and SOPs, cutting document retrieval time by 35%</li>
+                            <li>Monitored project deadlines using ClickUp, increasing on-time completion by 15%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item reveal" data-delay="0.1">
+                    <div class="exp-year">Jul 2025 – Dec 2025</div>
+                    <div class="exp-content">
+                        <h3>Policy &amp; Procedures Writer</h3>
+                        <p class="exp-org">Recovering by Numbers LLC · USA (Remote)</p>
+                        <ul class="exp-duties">
+                            <li>Authored complete employee handbook covering HR policies, clinical protocols, and
+                                compliance</li>
+                            <li>Designed client intake process, reducing intake time from 1 hour to 20 minutes</li>
+                            <li>Wrote SOPs for crisis response, confidentiality, and scheduling</li>
+                            <li>Served as sole documentation owner for US-based healthcare client</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item reveal" data-delay="0.15">
+                    <div class="exp-year">Apr 2025 – Aug 2025</div>
+                    <div class="exp-content">
+                        <h3>SOP Optimisation Consultant</h3>
+                        <p class="exp-org">I am Trucking · USA (Remote)</p>
+                        <ul class="exp-duties">
+                            <li>Audited and rewrote SOPs across dispatch, driver onboarding, compliance, and invoicing
+                            </li>
+                            <li>Reformatted documents into clear checklists/flowcharts, cutting new-hire ramp-up from 2
+                                weeks to 3 days</li>
+                            <li>Updated compliance documentation, closing gaps causing 21 repeat errors per month</li>
+                            <li>Streamlined review process, shortening turnaround from 15 to 5 days</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    CERTIFICATIONS
+    ============================================= -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="certifications-header reveal">
+                <span class="section-tag">Certifications</span>
+                <h2 class="section-title">My <span>credentials</span></h2>
+                <p class="section-sub">Professional certifications that validate my expertise.</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card glass-card reveal" data-delay="0.05">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Custom N8N Automation Workflows</h3>
+                    <p>Udemy · 2026</p>
+                </div>
+                <div class="cert-card glass-card reveal" data-delay="0.1">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Notion Workflow Badge</h3>
+                    <p>Notion Academy · 2025</p>
+                </div>
+                <div class="cert-card glass-card reveal" data-delay="0.15">
+                    <i class="fas fa-certificate"></i>
+                    <h3>ALX Virtual Assistant</h3>
+                    <p>ALX Africa · 2024</p>
+                </div>
+                <div class="cert-card glass-card reveal" data-delay="0.2">
+                    <i class="fas fa-certificate"></i>
+                    <h3>ClickUp Expert Certificate</h3>
+                    <p>ClickUp Academy · 2024</p>
+                </div>
+                <div class="cert-card glass-card reveal" data-delay="0.25">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Career Essentials in Admin</h3>
+                    <p>Microsoft &amp; LinkedIn · 2024</p>
+                </div>
+                <div class="cert-card glass-card reveal" data-delay="0.3">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Google Project Management</h3>
+                    <p>Google x Coursera · 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    WORK SAMPLES CAROUSEL - 10 SAMPLES
+    ============================================= -->
+    <section class="work-carousel" id="work">
+        <div class="container">
+            <div class="work-header reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Work <span>samples</span></h2>
+                <p class="section-sub">Real projects and systems I've built for clients across industries.</p>
+            </div>
+
+            <div class="work-carousel-wrapper">
+                <div class="work-carousel-track" id="workTrack">
+                    <!-- Card 1: Social Media Content -->
+                    <div class="work-card">
+                        <img src="./assets/social_media_content.jpg" alt="Social Media Content Strategy"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Content Strategy</span>
+                            <h3>Social Media Content Strategy</h3>
+                            <span class="work-result">30% increase in engagement across platforms</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Client Onboarding -->
+                    <div class="work-card">
+                        <img src="./assets/Client onboarding .png" alt="Client Onboarding System"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Operations</span>
+                            <h3>Client Onboarding System</h3>
+                            <span class="work-result">Reduced intake time from 1 hour to 20 minutes</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Calendar Management -->
+                    <div class="work-card">
+                        <img src="./assets/calender_mgt.png" alt="Executive Calendar Management"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Executive Support</span>
+                            <h3>Executive Calendar Management</h3>
+                            <span class="work-result">50+ meetings monthly across time zones</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Inbox Management -->
+                    <div class="work-card">
+                        <img src="./assets/inbox_mgt.png" alt="Executive Inbox Triage" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Executive Support</span>
+                            <h3>Executive Inbox Triage</h3>
+                            <span class="work-result">100+ emails weekly with 95% accuracy</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Client Tracker -->
+                    <div class="work-card">
+                        <img src="./assets/Client Tracker.png" alt="Client Relationship Tracker"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">CRM</span>
+                            <h3>Client Relationship Tracker</h3>
+                            <span class="work-result">Centralized client data &amp; communication history</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Notion Client Portal -->
+                    <div class="work-card">
+                        <img src="./assets/Notion Client Portal.png" alt="Notion Client Portal" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Client Portal</span>
+                            <h3>Notion Client Portal</h3>
+                            <span class="work-result">Streamlined client communication &amp; document sharing</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Discovery Call Automation -->
+                    <div class="work-card">
+                        <img src="./assets/Discovery Call Automation.jpg" alt="Discovery Call Automation"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Automation</span>
+                            <h3>Discovery Call Automation</h3>
+                            <span class="work-result">Handles scheduling, intake, reminders &amp; follow-ups</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Workflow Mapping -->
+                    <div class="work-card">
+                        <img src="./assets/Workflow Process Mapping.jpg" alt="Workflow Process Mapping"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Process Mapping</span>
+                            <h3>Workflow Process Mapping</h3>
+                            <span class="work-result">Clear flowcharts for every operational process</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 9: Digital Filing System -->
+                    <div class="work-card">
+                        <img src="./assets/Digital Filing System.png" alt="Digital Filing System"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Document Management</span>
+                            <h3>Digital Filing System</h3>
+                            <span class="work-result">Cut document retrieval time by 35%</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 10: Employee Handbook & SOPs -->
+                    <div class="work-card">
+                        <img src="./assets/Employee Handbook & SOPs.png" alt="Employee Handbook & SOPs"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">SOPs</span>
+                            <h3>Employee Handbook &amp; SOPs</h3>
+                            <span class="work-result">Reduced staff uncertainty &amp; onboarding time</span>
+                        </div>
+                    </div>
+
+                    <!-- =============================================
+                    DUPLICATES FOR SEAMLESS LOOP
+                    ============================================= -->
+                    <div class="work-card">
+                        <img src="./assets/social_media_content.jpg" alt="Social Media Content Strategy"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Content Strategy</span>
+                            <h3>Social Media Content Strategy</h3>
+                            <span class="work-result">30% increase in engagement across platforms</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/Client onboarding .png" alt="Client Onboarding System"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Operations</span>
+                            <h3>Client Onboarding System</h3>
+                            <span class="work-result">Reduced intake time from 1 hour to 20 minutes</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/calender_mgt.png" alt="Executive Calendar Management"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Executive Support</span>
+                            <h3>Executive Calendar Management</h3>
+                            <span class="work-result">50+ meetings monthly across time zones</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/inbox_mgt.png" alt="Executive Inbox Triage" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Executive Support</span>
+                            <h3>Executive Inbox Triage</h3>
+                            <span class="work-result">100+ emails weekly with 95% accuracy</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/Client Tracker.png" alt="Client Relationship Tracker"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">CRM</span>
+                            <h3>Client Relationship Tracker</h3>
+                            <span class="work-result">Centralized client data &amp; communication history</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/Notion Client Portal.png" alt="Notion Client Portal" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Client Portal</span>
+                            <h3>Notion Client Portal</h3>
+                            <span class="work-result">Streamlined client communication &amp; document sharing</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/Discovery Call Automation.jpg" alt="Discovery Call Automation"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Automation</span>
+                            <h3>Discovery Call Automation</h3>
+                            <span class="work-result">Handles scheduling, intake, reminders &amp; follow-ups</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/Workflow Process Mapping.jpg" alt="Workflow Process Mapping"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Process Mapping</span>
+                            <h3>Workflow Process Mapping</h3>
+                            <span class="work-result">Clear flowcharts for every operational process</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/Digital Filing System.png" alt="Digital Filing System"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Document Management</span>
+                            <h3>Digital Filing System</h3>
+                            <span class="work-result">Cut document retrieval time by 35%</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/Employee Handbook & SOPs.png" alt="Employee Handbook & SOPs"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">SOPs</span>
+                            <h3>Employee Handbook &amp; SOPs</h3>
+                            <span class="work-result">Reduced staff uncertainty &amp; onboarding time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="work-carousel-btn work-prev" id="workPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="work-carousel-btn work-next" id="workNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    TESTIMONIALS
+    ============================================= -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What people <span>say</span></h2>
+                <p class="section-sub">Real feedback from executives and collaborators.</p>
+            </div>
+            <div class="testimonial-carousel-wrapper">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Janet's calendar management saved our executive team 10+ hours weekly. She's an absolute
+                            asset.</p>
+                        <div class="author">
+                            <div class="initial">M</div>
+                            <div>
+                                <div class="name">Michael R.</div>
+                                <div class="role">CEO, Ark Renewable Energy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>She reduced our intake time from 1 hour to 20 minutes. Her SOPs are clear, thorough, and
+                            actually get used.</p>
+                        <div class="author">
+                            <div class="initial">S</div>
+                            <div>
+                                <div class="name">Sarah T.</div>
+                                <div class="role">Founder, Recovering by Numbers</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>The workflow systems Janet built cut our new-hire ramp-up time from 2 weeks to just 3 days.
+                        </p>
+                        <div class="author">
+                            <div class="initial">D</div>
+                            <div>
+                                <div class="name">David L.</div>
+                                <div class="role">Operations Manager, I am Trucking</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Janet handles all our executive communications with professionalism and discretion. Couldn't
+                            ask for more.</p>
+                        <div class="author">
+                            <div class="initial">A</div>
+                            <div>
+                                <div class="name">Amanda K.</div>
+                                <div class="role">COO, GreenTech Solutions</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Her systems audit was eye-opening. We cut wasted time by 60% and our team finally enjoys
+                            logging in.</p>
+                        <div class="author">
+                            <div class="initial">T</div>
+                            <div>
+                                <div class="name">Tunde A.</div>
+                                <div class="role">Founder, SheVentures</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Janet is the most organized person I've ever worked with. She keeps everything on track and
+                            everyone accountable.</p>
+                        <div class="author">
+                            <div class="initial">J</div>
+                            <div>
+                                <div class="name">Jessica F.</div>
+                                <div class="role">Operations Director</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+                <button class="testimonial-btn testimonial-prev" id="testimonialPrev"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-btn testimonial-next" id="testimonialNext"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    CONTACT
+    ============================================= -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content glass-card reveal" data-delay="0.1">
+                    <span class="section-tag">Get in touch</span>
+                    <h2 class="section-title">Let's <span>connect</span></h2>
+                    <p>Looking for an Executive Operations Specialist who can streamline your operations, simplify
+                        workflows, and cut down on repetitive tasks? Let's talk.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:uwakwejaneth@gmail.com">uwakwejaneth@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+2348050436026">+234 805 043 6026</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin-in"></i>
+                            <a href="https://linkedin.com/in/janet-uwakwe"
+                                target="_blank">linkedin.com/in/janet-uwakwe</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <a href="https://calendly.com/janetuwakwe/clarity-call"
+                                target="_blank">calendly.com/janetuwakwe/clarity-call</a>
+                        </div>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="https://calendly.com/janetuwakwe/clarity-call" target="_blank"
+                            class="btn btn-primary magnetic">
+                            <i class="fas fa-calendar-plus"></i> Book a Clarity Call
+                        </a>
+                        <a href="./assets/janet_resume.docx" download class="btn btn-outline magnetic">
+                            <i class="fas fa-file-pdf"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form glass-card reveal" data-delay="0.2">
+                    <form id="contactForm" action="https://formspree.io/f/xzepwjew" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email address" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="How can I support you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary magnetic">
+                            <i class="fas fa-paper-plane"></i> Send message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    CONNECT
+    ============================================= -->
+    <section class="connect" id="connect">
+        <div class="container">
+            <div class="connect-content reveal">
+                <span class="section-tag">Connect</span>
+                <h2 class="section-title">Find me <span>online</span></h2>
+                <p class="section-sub">I'm currently open to remote opportunities. Reach out via any platform below.</p>
+            </div>
+            <div class="connect-social-grid reveal" data-delay="0.1">
+                <a href="https://linkedin.com/in/janet-uwakwe" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:uwakwejaneth@gmail.com" class="social-link email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://wa.me/2348050436026" target="_blank" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://calendly.com/janetuwakwe/clarity-call" target="_blank" class="social-link calendly">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Calendly</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    FOOTER
+    ============================================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">Janet<span>.</span></div>
+                    <p>Executive Operations Specialist</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#competencies">Competencies</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#work">Work</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li>Executive Support</li>
+                        <li>AI Automation</li>
+                        <li>Operations Systems</li>
+                        <li>SOP Development</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:uwakwejaneth@gmail.com">uwakwejaneth@gmail.com</a></li>
+                        <li><a href="tel:+2348050436026">+234 805 043 6026</a></li>
+                        <li><a href="https://linkedin.com/in/janet-uwakwe" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://calendly.com/janetuwakwe/clarity-call" target="_blank">Book a Clarity
+                                Call</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Janet Uwakwe · Executive Operations Specialist</p>
+                <p class="tagline">Turning complexity into clarity, one system at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =============================================
+    SCRIPTS
+    ============================================= -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
