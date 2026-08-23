@@ -102,18 +102,16 @@ document.querySelectorAll('a, button, .comp-card, .about-card, .cert-card, .test
 });
 
 // =============================================
-// TYPEWRITER EFFECT - UPDATED
+// TYPEWRITER EFFECT - FINAL CORRECT VERSION
 // =============================================
 const typewriterEl = document.getElementById('typewriterText');
 
 if (typewriterEl) {
     const phrases = [
         'Executive Assistant.',
-        'Operations Specialist.',
-        'Calendar Manager.',
-        'Inbox Triage Expert.',
-        'SOP Developer.',
-        'Efficiency Driver.'
+        'your efficiency partner.',
+        'your automation expert.',
+        'your operations ally.'
     ];
 
     let phraseIndex = 0;
@@ -162,13 +160,13 @@ if (typewriterEl) {
 }
 
 // =============================================
-// STATS COUNTING ANIMATION - UPDATED
+// STATS COUNTING ANIMATION
 // =============================================
 function animateStats() {
     const stats = [
-        { id: 'stat1', target: 2, suffix: '+' },   // Years Experience
-        { id: 'stat2', target: 95, suffix: '%' },  // Response Time
-        { id: 'stat3', target: 35, suffix: '%' },  // Efficiency Boost
+        { id: 'stat1', target: 2, suffix: '+' },
+        { id: 'stat2', target: 95, suffix: '%' },
+        { id: 'stat3', target: 35, suffix: '%' },
     ];
 
     stats.forEach((stat) => {
@@ -567,4 +565,3 @@ console.log('📋 Operations: Notion, Airtable, Monday.com, ClickUp');
 console.log('🔄 Work Samples: 12 tailored projects (LARGER images)');
 console.log('📝 Formspree: Connected & ready');
 console.log('✨ Typewriter: Starts with "Executive Assistant"');
-console.log('🪟 Glass Effect: Opacity 0.3 (normal), 0.1 (hover)');
