@@ -102,17 +102,18 @@ document.querySelectorAll('a, button, .comp-card, .about-card, .cert-card, .test
 });
 
 // =============================================
-// TYPEWRITER EFFECT - "I'm Janet — " Static + Dynamic
+// TYPEWRITER EFFECT - UPDATED
 // =============================================
 const typewriterEl = document.getElementById('typewriterText');
 
 if (typewriterEl) {
     const phrases = [
-        'your efficiency partner.',
-        'your automation expert.',
-        'your systems architect.',
-        'your workflow optimizer.',
-        'your operations ally.'
+        'Executive Assistant.',
+        'Operations Specialist.',
+        'Calendar Manager.',
+        'Inbox Triage Expert.',
+        'SOP Developer.',
+        'Efficiency Driver.'
     ];
 
     let phraseIndex = 0;
@@ -161,13 +162,13 @@ if (typewriterEl) {
 }
 
 // =============================================
-// STATS COUNTING ANIMATION
+// STATS COUNTING ANIMATION - UPDATED
 // =============================================
 function animateStats() {
     const stats = [
-        { id: 'stat1', target: 50, suffix: '+' },
-        { id: 'stat2', target: 95, suffix: '%' },
-        { id: 'stat3', target: 35, suffix: '%' },
+        { id: 'stat1', target: 2, suffix: '+' },   // Years Experience
+        { id: 'stat2', target: 95, suffix: '%' },  // Response Time
+        { id: 'stat3', target: 35, suffix: '%' },  // Efficiency Boost
     ];
 
     stats.forEach((stat) => {
@@ -495,7 +496,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 // =============================================
-// CONTACT FORM - FORMPREE INTEGRATION
+// CONTACT FORM
 // =============================================
 const form = document.getElementById('contactForm');
 
@@ -557,13 +558,13 @@ if (form) {
 // =============================================
 console.log('🌸 Janet Uwakwe · Executive Operations Specialist');
 console.log('✅ Features: Lenis, GSAP, Custom Cursor, Glassmorphism, Typewriter');
-console.log('📊 Stats: 50+ Meetings Monthly · 95% Response Time · 35% Efficiency Boost');
+console.log('📊 Stats: 2+ Years Experience · 95% Response Time · 35% Efficiency Boost');
 console.log('🎨 Colors: Deep Plum #602437 + Raspberry #B9375E + Soft Blush #FFCAD4');
 console.log('📞 Contact: uwakwejaneth@gmail.com | +234 805 043 6026');
 console.log('🔗 LinkedIn: linkedin.com/in/janet-uwakwe');
 console.log('🤖 AI & Automation: Zapier, Make, n8n, Claude, Gemini');
 console.log('📋 Operations: Notion, Airtable, Monday.com, ClickUp');
-console.log('🔄 Work Samples: 4 tailored projects');
+console.log('🔄 Work Samples: 12 tailored projects (LARGER images)');
 console.log('📝 Formspree: Connected & ready');
-console.log('✨ Typewriter: "I\'m Janet — " static + 5 dynamic phrases');
-console.log('🪟 Glass Effect: Opacity reduced to 0.3 (normal), 0.1 (hover)');
+console.log('✨ Typewriter: Starts with "Executive Assistant"');
+console.log('🪟 Glass Effect: Opacity 0.3 (normal), 0.1 (hover)');

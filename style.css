@@ -953,7 +953,7 @@ h3,
 }
 
 /* =============================================
-   WORK CAROUSEL - UPDATED (larger images)
+   WORK CAROUSEL - UPDATED WITH LARGER IMAGES (50%)
    ============================================= */
 .work-carousel {
     padding: 60px 0 70px;
@@ -984,8 +984,8 @@ h3,
 }
 
 .work-card {
-    flex: 0 0 calc(40% - 16px);
-    /* ← INCREASED FROM 35% TO 40% */
+    flex: 0 0 calc(50% - 16px);
+    /* ← LARGER: CHANGED FROM 40% TO 50% */
     border-radius: var(--radius);
     position: relative;
     overflow: hidden;
@@ -1644,7 +1644,7 @@ footer {
 
     .work-card {
         flex: 0 0 calc(50% - 12px);
-        /* Adjust for tablet */
+        /* LARGER ON TABLET */
     }
 
     .testimonial-btn,
@@ -1771,7 +1771,7 @@ footer {
 
     .work-card {
         flex: 0 0 100%;
-        /* Full width on mobile */
+        /* FULL WIDTH ON MOBILE */
     }
 
     .work-carousel-wrapper,
